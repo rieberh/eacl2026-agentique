@@ -1,0 +1,8 @@
+agent_type = "subagent"
+description = "Corrige les fautes trouvées par l'agent relecteur."
+enabled_tools = ["read_file", "write_file"], 
+enabled_skills = ["normes"]
+instructions = "Tu suggères des corrections pour les fautes trouvées par l'agent relecteur. Tu les présentes sous la forme d'une liste. Tu ne modifie pas les fichiers originaux."
+[tools.read_file]
+[tools.write_file]
+denylist = ["*/data/gold/*"] # chemin absolu

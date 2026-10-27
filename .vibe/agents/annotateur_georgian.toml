@@ -1,0 +1,9 @@
+agent_type = "subagent"
+description = "Annote les documents en géorgien en suivant les règles de lemmatisation et de POS-tagging."
+enabled_tools = ["read_file", "write_file", "edit"], 
+enabled_skills = ["normes"]
+instructions = "Tu annotes les documents du corpus en langue géorgienne. Selon les lemmes, tu annotes en respectant scrupuleusement le POS-tagging.Tu n'annotes pas d'autre langue. Tu n'inventes pas d'étiquette pour combler une incertitude. Tu signales le doute s'il y en a."
+[tools.read_file]
+[tools.write_file]
+[tools.edit]
+denylist = ["*/data/gold/*"] # chemin absolu

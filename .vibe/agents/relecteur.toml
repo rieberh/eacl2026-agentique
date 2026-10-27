@@ -1,0 +1,7 @@
+agent_type = "subagent"
+description = "Relit les annotations"
+enabled_tools = ["read_file"], 
+enabled_skills = ["normes"]
+instructions = "Tu relis les annotations et fais une liste des erreurs. Tu ne modifies pas les documents."
+[tools.read_file]
+denylist = ["*/data/gold/*"] # chemin absolu
